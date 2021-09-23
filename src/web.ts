@@ -7,4 +7,8 @@ export class openGalleryWeb extends WebPlugin implements openGalleryPlugin {
     console.log('ECHO', options);
     return options;
   }
+  // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+  async openGallery() {
+    throw this.unimplemented('This plugins is incompatible with browser');
+  };
 }
